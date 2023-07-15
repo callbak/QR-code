@@ -1,0 +1,108 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Body , the Big container */
+body {
+    /* styling properties */
+    background-color: hsl(212, 45%, 89%);
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section , first element in the Body */
+.sec1 {
+    /* container properties */
+    height: 430px;
+    width: 270px;
+    /* styling properties */
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px hsl(214, 41%, 88%);
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text properties */
+    text-align: center;
+}
+
+.sec1 img {
+    /* image dimensions */
+    height: 55%;
+    width: 88%;
+    /* image styling */
+    border-radius: 10px;
+    margin: 13px 0;
+}
+
+#p1 {
+    /* styling properties */
+    color: hsl(218, 44%, 22%);
+    font-size: 22px;
+    font-weight: 700;
+    /* control properties */
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+
+#p2 {
+    /* styling properties */
+    color: hsl(220, 15%, 55%);
+    font-weight: 400;
+    font-size: 15px;
+    /* control properties */
+    margin: 0px 15px;
+}
+
+/* dev , seconde element in the Body */
+.attribution {
+    /* container properties */
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    /* flexing properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* styling properties */
+    /* text properties */
+    text-align: center;
+}
+
+/* mobile devs */
+@media (max-width:420px) {
+    .sec1 img {
+        /* image dimensions */
+        height: 50%;
+        width: 81%;
+    }
+
+    #p1 {
+        /* styling properties */
+        font-size: 20px;
+        /* control properties */
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    #p2 {
+        /* styling properties */
+        font-size: 15px;
+    }
+
+    .attribution {
+        flex-wrap: wrap;
+    }
+
+    .attribution span {
+        width: 70%;
+    }
+}
